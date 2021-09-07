@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="script.js" async></script>
+  <title>Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Indie+Flower&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="page-title">Kien's Game</h1>
+  <div class="overlay-text visible">
+   Click Everywhere to play
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info" style="font-style: oblique;">
+        Time <span id="time-remaining">0</span>
+      </div>
+      <div class="game-info">
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://s1.fifaaddict.com/fo4/players/zgyddrwd.png?20210801">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+       <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://s1.fifaaddict.com/fo4/players/zgyddrwd.png?20210801">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+       <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://futhead.cursecdn.com/static/img/21/players_alt/p134375751.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://futhead.cursecdn.com/static/img/21/players_alt/p134375751.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.fifplay.com/img/fifa/20/players/p67299735.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.fifplay.com/img/fifa/20/players/p67299735.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.footyrenders.com/render/romelu-lukaku-47.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.footyrenders.com/render/romelu-lukaku-47.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://1vs1-7f65.kxcdn.com/img/players/players/zlatan-ibrahimovic_1218_280-ub-800-mobile.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://1vs1-7f65.kxcdn.com/img/players/players/zlatan-ibrahimovic_1218_280-ub-800-mobile.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.footyrenders.com/render/ricardo-kaka-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.footyrenders.com/render/ricardo-kaka-2.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+       <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://futhead.cursecdn.com/static/img/20/players_alt/p50331689.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://futhead.cursecdn.com/static/img/20/players_alt/p50331689.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.pngkey.com/png/full/53-539311_zinedine-zidane-render-zidane-render.png">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-back card-face">
+        <img src="https://game4.vn/data/cards/01IO012.webp" alt="" class="card-back-img">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="https://www.pngkey.com/png/full/53-539311_zinedine-zidane-render-zidane-render.png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
